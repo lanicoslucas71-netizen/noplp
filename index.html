@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; min-height: 15.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="fr"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;N'Oubliez Pas Les Paroles — Spécial Camping&lt;/title&gt;</p>
+<p class="p1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;script src="https://open.spotify.com/embed/iframe-api/v1" async&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>:root{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--stage:#0b0b0e; --panel:#17151d; --panel2:#211d29;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--gold:#d4af37; --gold-light:#f3d677; --cream:#f5ecd9;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--velvet:#7a1330; --velvet-light:#c23a5c; --ok:#7fae5a; --muted:#9a93a6;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>*{box-sizing:border-box;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>body{ margin:0; background:radial-gradient(ellipse 900px 500px at 50% -10%, rgba(212,175,55,0.16), transparent 60%), var(--stage);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:var(--cream); font-family:'Manrope',sans-serif; min-height:100vh; padding-bottom:40px; position:relative; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>h1,h2,h3,.display{ font-family:'Bebas Neue',sans-serif; letter-spacing:1px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.curtain{ position:fixed; top:0; bottom:0; width:70px; z-index:0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background:repeating-linear-gradient(90deg, #4a0d1f 0px, #6b1229 14px, #4a0d1f 28px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow: inset 0 0 40px rgba(0,0,0,.6); display:none; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.curtain.left{ left:0; border-radius:0 30px 30px 0; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.curtain.right{ right:0; border-radius:30px 0 0 30px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>@media(min-width:1100px){ .curtain{ display:block; } }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.lightbar{ display:flex; justify-content:center; gap:8px; padding:14px 0 4px; position:relative; z-index:1;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.lightbar span{ width:8px;height:8px;border-radius:50%; background:var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow:0 0 8px 2px rgba(212,175,55,0.6); animation:blink 1.8s infinite ease-in-out; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.lightbar span:nth-child(odd){animation-delay:.3s;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.lightbar span:nth-child(3n){animation-delay:.6s;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>@keyframes blink{ 0%,100%{opacity:.35;transform:scale(.8);} 50%{opacity:1;transform:scale(1.15);} }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>header.marquee{ text-align:center; padding:6px 16px 14px; position:relative; z-index:1;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.spotlight{ position:absolute; top:-60px; left:50%; transform:translateX(-50%); width:520px; height:260px; border-radius:50%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background:radial-gradient(ellipse, rgba(243,214,119,.22), transparent 70%); animation:sway 6s infinite ease-in-out; pointer-events:none; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>@keyframes sway{ 0%,100%{ transform:translateX(-56%) rotate(-2deg); } 50%{ transform:translateX(-44%) rotate(2deg); } }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>header.marquee .logo{ font-size:clamp(32px,7.5vw,54px); color:var(--gold-light); position:relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-shadow:0 0 18px rgba(243,214,119,0.5), 0 2px 0 #7a5c14; line-height:0.95; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>header.marquee .logo small{ display:block; font-family:'Manrope',sans-serif; font-weight:700; font-size:12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing:4px; color:var(--velvet-light); margin-top:8px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>nav.tabs{ display:flex; gap:6px; justify-content:center; flex-wrap:wrap; padding:0 12px 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position:sticky; top:0; z-index:20; background:linear-gradient(var(--stage) 70%, transparent); padding-top:8px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>nav.tabs button{ background:var(--panel); color:var(--muted); border:1px solid #2c2734; padding:9px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius:999px; font-weight:700; font-size:13px; cursor:pointer; transition:.15s; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>nav.tabs button.active{ background:var(--gold); color:#221a05; border-color:var(--gold); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>nav.tabs button:not(.active):hover{ border-color:var(--gold); color:var(--gold-light); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>main{ max-width:900px; margin:0 auto; padding:0 16px; position:relative; z-index:1; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.screen{ display:none; animation:fade .25s ease; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.screen.active{ display:block; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>@keyframes fade{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.layout{ display:grid; grid-template-columns:1fr; gap:16px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>@media(min-width:760px){ .layout{ grid-template-columns:1fr 230px; align-items:start; } }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card{ background:var(--panel); border:1px solid #2b2634; border-radius:16px; padding:18px; margin-bottom:16px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card h3{ margin:0 0 4px; font-size:22px; color:var(--gold-light);}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>p.hint{ color:var(--muted); font-size:13px; line-height:1.5; margin:4px 0 12px;}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn{ display:inline-flex; align-items:center; gap:6px; background:var(--gold); color:#221a05; border:none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius:10px; padding:11px 18px; font-weight:800; font-size:14px; cursor:pointer; transition:.15s; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn:hover{ transform:translateY(-1px); box-shadow:0 4px 14px rgba(212,175,55,.35);}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn.secondary{ background:var(--panel2); color:var(--cream); border:1px solid #3a3346;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn.velvet{ background:var(--velvet); color:#fff;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn.ok{ background:var(--ok); color:#0f1d08;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn.mystere{ background:linear-gradient(100deg,#3a2f5c,#6c4fae); color:#fff; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn.spot{ background:#1DB954; color:#04140a; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn:disabled{ opacity:.4; cursor:not-allowed; transform:none; box-shadow:none;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.btn.small{ padding:7px 12px; font-size:12px; border-radius:8px;}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>input[type=text], input[type=number], input[type=url], textarea, select{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:100%; background:#0f0d13; border:1px solid #332c40; color:var(--cream); border-radius:10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:10px 12px; font-family:inherit; font-size:14px; margin-bottom:10px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>textarea{ min-height:140px; resize:vertical; line-height:1.6;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>label{ font-size:12px; font-weight:700; color:var(--gold-light); display:block; margin-bottom:5px; letter-spacing:.5px;}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-steps{ display:grid; gap:10px; margin-top:10px;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-steps div{ display:flex; gap:10px; align-items:flex-start; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-steps .num{ font-family:'Bebas Neue'; font-size:20px; color:#221a05; background:var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex:none; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.theme-row{ display:flex; gap:8px; align-items:center; margin-bottom:8px; background:#0f0d13; padding:10px; border-radius:10px; border:1px solid #2b2634;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.theme-row input[type=text]{ margin:0; flex:2;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.theme-row input[type=number]{ margin:0; flex:0 0 80px;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.theme-row .btn{ flex:none;}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.grid-wrap{ text-align:center; margin-bottom:14px;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.grid-tiles{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:14px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.tile{ background:linear-gradient(160deg,var(--panel2),var(--panel)); border:1px solid var(--gold); border-radius:14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:16px 8px; cursor:pointer; transition:.15s; position:relative; overflow:hidden; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.tile:hover:not(.played){ transform:translateY(-3px); box-shadow:0 6px 20px rgba(212,175,55,.3);}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.tile .pts{ font-family:'Bebas Neue'; font-size:26px; color:var(--gold-light);}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.tile .name{ font-size:12px; font-weight:700; margin-top:2px; color:var(--cream);}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.tile.played{ opacity:.28; cursor:default; filter:grayscale(1);}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.scoreboard{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.player-chip{ background:var(--panel2); border:1px solid #3a3346; border-radius:999px; padding:8px 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:13px; font-weight:700; cursor:pointer; display:flex; gap:8px; align-items:center; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.player-chip.active{ border-color:var(--gold); background:#2a2311; color:var(--gold-light);}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.player-chip .sc{ color:var(--gold-light); font-family:'Bebas Neue'; font-size:16px;}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.pyramid{ position:sticky; top:110px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.pyramid h4{ margin:0 0 8px; font-size:13px; letter-spacing:1px; color:var(--gold-light); text-transform:uppercase; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.rung{ display:flex; justify-content:space-between; align-items:center; padding:7px 10px; margin-bottom:4px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius:8px; background:#0f0d13; border:1px solid #241f2c; font-size:12px; color:var(--muted); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.rung.reached{ background:linear-gradient(90deg,#2a2311,#0f0d13); border-color:var(--gold); color:var(--gold-light); font-weight:800; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cagnotte{ margin-top:10px; text-align:center; background:linear-gradient(160deg,var(--gold),#a9822a); color:#221a05;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius:12px; padding:12px; font-family:'Bebas Neue'; font-size:15px; letter-spacing:1px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cagnotte b{ display:block; font-size:26px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.overlay{ position:fixed; inset:0; background:rgba(5,4,7,.86); z-index:50; display:flex; align-items:center; justify-content:center; padding:16px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.overlay.hidden{ display:none; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.modal{ background:var(--panel); border:1px solid var(--gold); border-radius:18px; padding:20px; max-width:520px; width:100%; max-height:88vh; overflow:auto;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.song-choice{ display:flex; justify-content:space-between; align-items:center; gap:10px; background:#0f0d13; border:1px solid #332c40; border-radius:12px; padding:14px; margin-bottom:10px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.song-choice .info b{ display:block; font-size:16px; color:var(--gold-light);}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.song-choice .info span{ font-size:12px; color:var(--muted);}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.stage{ background:radial-gradient(ellipse at 50% 0%, rgba(212,175,55,.15), transparent 60%), var(--panel);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border:1px solid var(--gold); border-radius:18px; padding:18px; margin-bottom:14px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.stage .title-row{ display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:8px;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.stage .title-row h3{ margin:0;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge-pts{ background:var(--gold); color:#221a05; font-family:'Bebas Neue'; font-size:16px; padding:4px 12px; border-radius:999px;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.status-pill{ font-size:11px; font-weight:800; padding:4px 10px; border-radius:999px; display:inline-block; margin-bottom:10px;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.status-pill.cal{ background:#3a2f5c; color:#c9b6ff; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.status-pill.auto{ background:var(--ok); color:#0f1d08; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.status-pill.manual{ background:var(--panel2); color:var(--muted); border:1px solid #3a3346;}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>#spotify-embed-el{ margin-bottom:10px; border-radius:12px; overflow:hidden; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.transport{ display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap;}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.prompter{ background:#0a090d; border:1px solid #2b2634; border-radius:14px; padding:16px; max-height:300px; overflow-y:auto; scroll-behavior:smooth; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.line{ padding:8px 4px; font-size:16px; color:#6b6577; transition:.2s; border-radius:8px;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.line.current{ color:var(--gold-light); font-size:19px; font-weight:700; background:rgba(212,175,55,.08);}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.line.done{ color:#4a4552; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.line .ts{ font-size:10px; color:var(--muted); margin-right:6px;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.blank{ display:inline-block; min-width:44px; padding:0 6px; margin:0 2px; border-bottom:2px solid var(--gold); cursor:pointer; text-align:center; color:var(--gold); font-weight:800; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.blank.correct{ color:var(--ok); border-color:var(--ok);}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.blank.wrong{ color:var(--velvet-light); border-color:var(--velvet-light); text-decoration:line-through;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.blank-pop{ position:fixed; z-index:60; background:var(--panel2); border:1px solid var(--gold); border-radius:10px; padding:8px; display:flex; gap:6px; box-shadow:0 6px 18px rgba(0,0,0,.5); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.blank-pop.hidden{ display:none; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.line-nav{ display:flex; gap:8px; margin-top:12px; flex-wrap:wrap;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.empty{ text-align:center; color:var(--muted); padding:24px 10px; font-size:14px;}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.rank{ display:flex; align-items:center; gap:10px; background:#0f0d13; border-radius:12px; padding:12px 14px; margin-bottom:8px; border:1px solid #2b2634;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.rank .medal{ font-size:22px; width:30px; text-align:center;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.rank .name{ flex:1; font-weight:700;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.rank .sc{ font-family:'Bebas Neue'; font-size:22px; color:var(--gold-light);}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.mystere-box{ text-align:center; border:2px dashed #6c4fae; border-radius:16px; padding:20px; background:rgba(108,79,174,.08); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.mystere-box h3{ color:#c9b6ff; font-size:26px; margin:0 0 6px;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.continue-banner{ background:var(--velvet); color:#fff; text-align:center; padding:12px; border-radius:12px; margin-bottom:12px; font-weight:800; }</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="curtain left"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="curtain right"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="lightbar"&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;header class="marquee"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="spotlight"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="logo"&gt;N'OUBLIEZ PAS&lt;br&gt;LES PAROLES&lt;small&gt;SPÉCIAL CAMPING&lt;/small&gt;&lt;/div&gt;</p>
+</body>
+</html>
